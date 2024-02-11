@@ -60,6 +60,9 @@
     <Analyzer Include="E:\UnityEditor\2022.3.19f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\PlayerInfoDisplay.cs" />
+    <Compile Include="Assets\Player.cs" />
+    <Compile Include="Assets\Scripts\CustomNetworkManager.cs" />
     <Compile Include="Assets\Scripts\Steamworks.NET\SteamLobby.cs" />
     <Compile Include="Assets\Scripts\Steamworks.NET\SteamManager.cs" />
   </ItemGroup>

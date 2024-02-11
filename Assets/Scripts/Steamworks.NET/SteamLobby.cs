@@ -16,6 +16,8 @@ namespace Game.Multiplayer
         protected Callback<GameLobbyJoinRequested_t> gameLobbyJointRequested;
         protected Callback<LobbyEnter_t> lobbyEntered;
 
+        public static CSteamID LobbyId { get; private set; }
+
 
         private void Start()
         {
@@ -47,6 +49,8 @@ namespace Game.Multiplayer
                 buttons.SetActive(true);
                 return;
             }
+
+            LobbyId = new CSteamID(callback.m_ulSteamIDLobby);
 
             _networkManager.StartHost();
 
